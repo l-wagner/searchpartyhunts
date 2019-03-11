@@ -10,7 +10,7 @@ import { withI18next } from '../lib/withI18next'
 const Index = ({ t }) => (
   <div>
     <Head>
-     <link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand" rel="stylesheet"/>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     {/*    <h1>{t('welcome')}</h1>
