@@ -1,0 +1,9 @@
+{
+  "welcome": "welcome to next.js",
+  "sample_test": "test words for en",
+  "sample_button": "fire in the wind for en",
+  "link": {
+    "gallery": "Gallery",
+    "gotoPage3": "Go to page 3 (no hoc)"
+  }
+}
