@@ -1,0 +1,27 @@
+{
+  "addons": [
+    "resizer"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "RESIZER_API_KEY": {
+      "required": true
+    },
+    "RESIZER_CLIENT_ID": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "searchpartyhunts",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
