@@ -12,6 +12,7 @@ import "bootstrap/scss/bootstrap.scss";
 import en from "../content/en.json";
 import Header from "../components/Header";
 import Popup from "../components/Popup";
+import HeroCarousel from "../components/HeroCarousel";
 
 import "./Index.scss";
 
@@ -95,6 +96,9 @@ class Index extends Component {
             onClick={this.buttonClick.bind(this)}
           />
         </div>
+         <main role="main">
+            <HeroCarousel />
+            </main>
       </div>
     );
   }

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { LocalizeProvider } from "react-localize-redux";
 
 import Index from "./pages/Index.js";
-import EpisodeLog from "./pages/EpisodeLog.js";
 
 function AppRouter() {
   return (
