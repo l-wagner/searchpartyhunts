@@ -13,6 +13,32 @@ import en from "../content/en.json";
 import Header from "../components/Header";
 import Popup from "../components/Popup";
 import HeroCarousel from "../components/HeroCarousel";
+import Values from "../components/Values";
+import Gallery from "../components/Gallery";
+import Testimonials from "../components/Testimonials";
+
+import MediaQuery from "react-responsive";
+import { Translate } from "react-localize-redux";
+
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import SearchIcon from "@material-ui/icons/Search";
+
+import {
+  OneIcon,
+  TwoIcon,
+  ThreeIcon,
+  FourIcon
+} from "../components/icons/numbers.js";
+
+import BusinessIcon from "@material-ui/icons/BusinessCenter";
+import HeartIcon from "@material-ui/icons/Favorite";
+
+import ListIcon from "@material-ui/icons/List";
+import CakeIcon from "@material-ui/icons/Cake";
 
 import "./Index.scss";
 
@@ -96,45 +122,127 @@ class Index extends Component {
             onClick={this.buttonClick.bind(this)}
           />
         </div>
-         <main role="main">
-            <HeroCarousel />
-            </main>
+        <div role="div">
+          <HeroCarousel />
+
+          <section id="values-section">
+            <MediaQuery minWidth={599}>
+              {matches => {
+                return matches ? (
+                  <div
+                    className="values"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                  >
+                    <div>
+                      <ListIcon />
+                      <p>
+                        <Translate id="values.value-2" />
+                      </p>
+                    </div>
+                    <div>
+                      <CakeIcon />
+                      <p>
+                        <Translate id="values.value-1" />
+                      </p>
+                    </div>
+                    <div>
+                      <HeartIcon />
+                      <p>
+                        <Translate id="values.value-3" />
+                      </p>
+                    </div>
+                    <div>
+                      <BusinessIcon />
+                      <p>
+                        <Translate id="values.value-4" />
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="values">
+                    <div data-aos="fade-up" data-aos-duration="500">
+                      <ListIcon />
+                      <p>
+                        <Translate id="values.value-2" />
+                      </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500">
+                      <CakeIcon />
+                      <p>
+                        <Translate id="values.value-1" />
+                      </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500">
+                      <HeartIcon />
+                      <p>
+                        <Translate id="values.value-3" />
+                      </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500">
+                      <BusinessIcon />
+                      <p>
+                        <Translate id="values.value-4" />
+                      </p>
+                    </div>
+                  </div>
+                );
+              }}
+            </MediaQuery>
+          </section>
+          <section id="howitworks-section">
+            <div className="how-it-works">
+              <VerticalTimeline>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  icon={<OneIcon />}
+                >
+                  <h4 className="vertical-timeline-element-subtitle">
+                    <Translate id="howitworks.step-1" />
+                  </h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  icon={<TwoIcon />}
+                >
+                  <h4 className="vertical-timeline-element-subtitle">
+                    <Translate id="howitworks.step-2" />
+                  </h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  icon={<ThreeIcon />}
+                >
+                  <h4 className="vertical-timeline-element-subtitle">
+                    <Translate id="howitworks.step-3" />
+                  </h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  icon={<FourIcon />}
+                >
+                  <h4 className="vertical-timeline-element-subtitle">
+                    <Translate id="howitworks.step-4" />
+                  </h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--last"
+                  icon={<SearchIcon />}
+                />
+              </VerticalTimeline>
+            </div>
+          </section>
+          <section className="testimonials-gallery-section">
+            <div className="testimonials-gallery-section">
+              <Gallery />
+              <Testimonials />
+            </div>
+          </section>
+        </div>
       </div>
     );
   }
 }
-// function Index(props) {
-//   const { classes } = props;
-
-//   return (
-//     <div className={classes.root}>
-//       <Grid container spacing={24}>
-//         <Grid item xs={12}>
-//           <Paper className={classes.paper}>xs=12</Paper>
-//         </Grid>
-//         <Grid item xs={6}>
-//           <Paper className={classes.paper}>xs=6</Paper>
-//         </Grid>
-//         <Grid item xs={6}>
-//           <Paper className={classes.paper}>xs=6</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Paper className={classes.paper}>xs=3</Paper>
-//         </Grid>
-//       </Grid>
-//     </div>
-//   );
-// }
-
 Index.propTypes = {
   classes: PropTypes.object.isRequired
 };

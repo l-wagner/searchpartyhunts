@@ -66,12 +66,12 @@
     "quote-4": {
       "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "person": "Tim, bachelorette party participant"
-    },
-    "values": {
-      "value-1": "Ramp up the party with a mission tailored to your guest of honor.",
-      "value-2": "Choose your favorite hunt from our list.",
-      "value-3": "Request a hunt inspired by your favorite things.",
-      "value-4": "Rally your employees with a fun team-building challenge."
     }
+  },
+  "values": {
+    "value-1": "Ramp up the party with a mission tailored to your guest of honor.",
+    "value-2": "Choose your favorite hunt from our list.",
+    "value-3": "Request a hunt inspired by your favorite things.",
+    "value-4": "Rally your employees with a fun team-building challenge."
   }
 }
