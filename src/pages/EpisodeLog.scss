@@ -1,0 +1,31 @@
+$blue: #5c96bc;
+$green: #42e31b;
+$yellow: #fede16;
+$tan: #f5bc55;
+$red: #c60600;
+
+.EpisodeLog {
+height: 100vh;
+  padding-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "episode-player episode-description episode-description" 
+    "episode-description episode-description episode-player"
+    "episode-player episode-description episode-description";
+
+  .episode-player {
+    grid-area: episode-player;
+    background-color: $green;
+  }
+
+  .episode-description {
+    grid-area: episode-description;
+    background-color: $blue;
+  }
+}

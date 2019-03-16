@@ -1,0 +1,77 @@
+{
+  "about": {
+    "header": "WE’RE READY FOR OUR NEXT CHALLENGE. ARE YOU?",
+    "text": "We’re two Gemini book publishing professionals with a knack for puzzles and puns who want to customize your next scavenger hunt experience. Whatever you’re looking for, we’re ready to stump you!",
+    "signature": "Detectives Woods & Woj"
+  },
+  "carousel": {
+    "first": {
+      "header": "CELEBRATIONS",
+      "text": "Ramp up the party with a mission tailored to your guest of honor."
+    },
+    "second": {
+      "header": "THEMES",
+      "text": "Request a hunt inspired by your favorite things."
+    },
+    "third": {
+      "header": "WILD CARD",
+      "text": "Choose your favorite hunt from our list."
+    },
+    "fourth": {
+      "header": "CORPORATE",
+      "text": "Rally your employees with a fun team-building challenge."
+    }
+  },
+  "footer": {
+    "footer": "Footer-like information."
+  },
+  "header": {
+    "title": "Search Party",
+    "navbar": {
+      "how": "How it Works",
+      "about": "About us",
+      "gallery": "Gallery",
+      "testimonials": "Testimonials",
+      "contact": "Contact Us!"
+    }
+  },
+  "home": {
+    "welcome": "welcome to next.js",
+    "sample_test": "test words for en",
+    "sample_button": "fire in the wind for en",
+    "link": {
+      "gallery": "Gallery",
+      "gotoPage3": "Go to page 3 (no hoc)"
+    }
+  },
+  "howitworks": {
+    "step-1": "Contact us and let us get to know you.",
+    "step-2": "We’ll set up a hunt that’s perfect for your group.",
+    "step-3": "Look for your email instructions twenty-four hours before the hunt.",
+    "step-4": "Embrace your inner detective and have fun!"
+  },
+  "testimonials": {
+    "quote-1": {
+      "quote": "I absolutely loved how personal it was to me and the thought you put into it. I keep telling people about it!",
+      "person": "Allie, bride-to-be"
+    },
+    "quote-2": {
+      "quote": "I think it’s great for groups like ours where you don’t all know each other. It’s the perfect icebreaker because it gives people something to talk about.",
+      "person": "Beth, bachelorette party participant"
+    },
+    "quote-3": {
+      "quote": "Whether you have a special event coming up or are looking for a different and interesting way to spend a Saturday afternoon, my bachelorette party was unlike anything I had done before and was a fun and special way for me to spend a weekend with all my best friends.",
+      "person": "Molly, bride-to-be"
+    },
+    "quote-4": {
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "person": "Tim, bachelorette party participant"
+    },
+    "values": {
+      "value-1": "Ramp up the party with a mission tailored to your guest of honor.",
+      "value-2": "Choose your favorite hunt from our list.",
+      "value-3": "Request a hunt inspired by your favorite things.",
+      "value-4": "Rally your employees with a fun team-building challenge."
+    }
+  }
+}

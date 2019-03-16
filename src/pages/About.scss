@@ -1,0 +1,19 @@
+.About {
+    
+    height: 100vh;
+    margin-left: 2em;
+    margin-right: 2em;
+    display: grid;
+    grid-gap: 1rem;
+
+    display: grid;
+    grid-template-areas: "header" "summary" "bios";
+
+    .bios {
+        display: grid;
+        grid-gap: 1rem;
+
+        display: grid;
+        grid-template-areas: "p1 p2 p3 p4";
+    }
+}
