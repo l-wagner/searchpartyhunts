@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import CloseIcon from "@material-ui/icons/Cancel";
-// import Socials from "./socials";
-// import Form from "./form";
+import Socials from "./Socials";
+import Form from "./Form";
 // dissappear on scroll
 // shared state between all contact forms with prepopulation if they entered anything
 // once it was focused, no disappear on scroll
@@ -77,8 +77,11 @@ export default class Popup extends Component {
             <CloseIcon className="icon" onClick={this.props.onClick} />
           </div>
           <div className="popup-grid">
-            <div className="socials" />
+            <div className="socials">
+              <Socials />
+            </div>
             <div className="or">or</div>
+            <Form/>
           </div>
         </div>
       )
