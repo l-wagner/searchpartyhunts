@@ -12,10 +12,12 @@ import "bootstrap/scss/bootstrap.scss";
 import en from "../content/en.json";
 import Header from "../components/Header";
 import Popup from "../components/Popup";
+import Socials from "../components/Socials";
 import HeroCarousel from "../components/HeroCarousel";
 import Values from "../components/Values";
 import Gallery from "../components/Gallery";
 import Testimonials from "../components/Testimonials";
+import RotatingList from "../components/RotatingList";
 
 import MediaQuery from "react-responsive";
 import { Translate } from "react-localize-redux";
@@ -126,69 +128,7 @@ class Index extends Component {
           <HeroCarousel />
 
           <section id="values-section">
-            <MediaQuery minWidth={599}>
-              {matches => {
-                return matches ? (
-                  <div
-                    className="values"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                  >
-                    <div>
-                      <ListIcon />
-                      <p>
-                        <Translate id="values.value-2" />
-                      </p>
-                    </div>
-                    <div>
-                      <CakeIcon />
-                      <p>
-                        <Translate id="values.value-1" />
-                      </p>
-                    </div>
-                    <div>
-                      <HeartIcon />
-                      <p>
-                        <Translate id="values.value-3" />
-                      </p>
-                    </div>
-                    <div>
-                      <BusinessIcon />
-                      <p>
-                        <Translate id="values.value-4" />
-                      </p>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="values">
-                    <div data-aos="fade-up" data-aos-duration="500">
-                      <ListIcon />
-                      <p>
-                        <Translate id="values.value-2" />
-                      </p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="500">
-                      <CakeIcon />
-                      <p>
-                        <Translate id="values.value-1" />
-                      </p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="500">
-                      <HeartIcon />
-                      <p>
-                        <Translate id="values.value-3" />
-                      </p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="500">
-                      <BusinessIcon />
-                      <p>
-                        <Translate id="values.value-4" />
-                      </p>
-                    </div>
-                  </div>
-                );
-              }}
-            </MediaQuery>
+            <Values/>
           </section>
           <section id="howitworks-section">
             <div className="how-it-works">
@@ -207,6 +147,8 @@ class Index extends Component {
                 >
                   <h4 className="vertical-timeline-element-subtitle">
                     <Translate id="howitworks.step-2" />
+
+
                   </h4>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -238,6 +180,14 @@ class Index extends Component {
               <Testimonials />
             </div>
           </section>
+         <footer>
+            <p className="test" ></p>
+            <div>
+            <Socials/>
+            </div>
+            <p className="test" />
+            </footer>
+
         </div>
       </div>
     );

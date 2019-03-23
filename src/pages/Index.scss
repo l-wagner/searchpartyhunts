@@ -17,10 +17,14 @@ $mutedyellow: #e8bc4e;
 $beige: #edb6a3;
 $maroon: #75313a;
 
-$sans-serif: 'PT Sans Narrow';
-$sans-serif-accent: 'Fjalla One', sans-serif;
-$accent: 'Sail', cursive;
-$serif: 'Roboto Slab', serif;
+// $sans-serif: 'PT Sans Narrow';
+// $accent: 'Fjalla One', sans-serif;
+// $accent: 'Sail', cursive;
+// $serif: 'Roboto Slab', serif;
+
+$sans-serif: 'Roboto';
+$accent: 'Shrikhand';
+
 
 $light: 300;
 $normal: 400;
@@ -240,7 +244,7 @@ textarea {
   display: none;
 }
 .label {
-  font-family: $sans-serif-accent;
+  font-family: $accent;
     // background-color: $yellow;
     background-color: $yellow;
 
@@ -290,6 +294,7 @@ textarea {
 
 
 nav.header {
+  font-family: $accent;
   a {
     
     text-decoration: none;
@@ -531,7 +536,7 @@ nav.header {
   }
 
   .carousel-caption {
-    font-family: $sans-serif-accent;
+    font-family: $accent;
     font-style: italic;
     h3 {
       color: $yellow;
@@ -602,7 +607,7 @@ section {
   max-width: 100vw;
   text-align: center;
   color: $white;
-  // font-family: $sans-serif-accent;
+  // font-family: $accent;
 
   padding: 2em 0 2em 0;
 
@@ -612,10 +617,18 @@ section {
   }
 
   &:nth-of-type(odd) {
-    background-color: $sectionwhite;
+    // background-color: $sectionwhite;
   }
   &:nth-child(4) {
     background-color: $maroon;
+    // background-color: $gray;
+  }
+  &:nth-child(2) {
+    // border-top: 15px solid white;
+    // border-bottom: 15px solid white;
+    // border-right: 15px solid white;
+    // border-top-left-radius: 5%;
+    background-color: $yellow;
     // background-color: $gray;
   }
   &:nth-child(3) {
@@ -626,36 +639,44 @@ section {
   /*---------Values--------*/
   .values {
     display: grid;
-
+    
+    justify-items: space-between;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.5em;
-    justify-items: center;
-    align-items: center;
-    color: $gray;
+    margin: 0 auto;
+    color: black;
+    width: 90%;
 
     p {
-      font-family: $sans-serif-accent;
+      // font-family: $accent;
       
     }
     svg {
+      border: 5px solid white;
+      background-color: white;
+      border-radius: 50%;
       color: $maroon;
       // color: $blue;
-      font-size: 2em;
+      font-size: 2.3em;
       margin-bottom: 1em;
     }
     div {
-      width: 80%;
+
+      // text-align: center;
     }
     @media screen and (max-width: $break-phone) {
-      grid-template-columns: auto;
-      grid-row-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2em;
+    width: 80%;
+
+    
     }
   }
   /*---------Values-End--------*/
   /*---------How-it-works--------*/
   .how-it-works {
     color: black;
-    font-family: $sans-serif-accent;
+    font-family: $accent;
     overflow-x: hidden;
     min-height: 20em;
     display: grid;
@@ -833,7 +854,7 @@ section {
         width: 80%;
         color: $white;
         // text-shadow: 3px 0px 0px #000;
-        font-family: $serif;
+        // font-family: $serif;
         // font-style: italic;
         letter-spacing: 2px;
         font-size: 1.1em;
@@ -842,7 +863,7 @@ section {
       }
 
       .signature {
-        font-family: $sans-serif-accent;
+        font-family: $accent;
         font-style: bold;
         // text-shadow: 3px 0px 0px #000;
         letter-spacing: 2px;
@@ -890,7 +911,7 @@ section {
       text-align: center;
       width: 100%;
       padding: 1em;
-      font-family: $sans-serif-accent;
+      font-family: $accent;
       font-style: italic;
     }
     .about-contact {
@@ -923,7 +944,7 @@ section {
         }
 
         div:first-child {
-          font-family: $serif;
+          // font-family: $serif;
           font-size: 1.2em;
 
           font-weight: bold;
