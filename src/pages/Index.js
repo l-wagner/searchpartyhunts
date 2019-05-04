@@ -147,7 +147,7 @@ class Index extends Component {
                 >
                   <h4 className="vertical-timeline-element-subtitle">
                     <Translate id="howitworks.step-2" />
-
+                    <RotatingList/>
 
                   </h4>
                 </VerticalTimelineElement>

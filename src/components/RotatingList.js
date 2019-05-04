@@ -61,7 +61,7 @@ class RotatingDiv extends React.Component {
                 interval={[2700, 3300, 2000]}
                 delay={1900}
                 springConfig={{ stiffness: 180, damping: 10 }}
-                fade={false}
+                fade={true}
               >
                 {themes.map(theme => (
                   <span key={theme.length}>
@@ -76,7 +76,7 @@ class RotatingDiv extends React.Component {
                 interval={[2500, 3000, 3500]}
                 delay={800}
                 mask={true}
-                fade={false}
+                fade={true}
               >
                 {events.map(event => (
                   <span key={event.length}>{event}</span>
@@ -109,11 +109,13 @@ class RotatingDiv extends React.Component {
 
 const styles = theme => ({
   rotateContainer: {
-    display: 'inline-grid',
+    display: 'grid',
     width: '70%',
-    
-    gridTemplateAreas: '"theme themed event"',
-    gridTemplateColumns: ' 1fr 1fr 1fr',
+    margin: '1em auto',
+    textAlign: 'center',
+    gridTemplateAreas: '"theme" "themed" "event"',
+    gridTemplateRows: '1fr 1fr 1fr',
+    grodRowGap: '.3em',
     
 
     // '&:nth-child(1)': {
@@ -129,19 +131,29 @@ const styles = theme => ({
 
    theme: {
     // width: '100%',
-    width: '100%',
+    // width: '100%',
     gridArea: 'theme',
+    // display: 'grid',
+    // justifyItems: 'center',
+    // alignItems: 'center',
+    justifySelf: 'center',
+    // textAlign: 'center',
+    // '& > div': {
+    //   margin: '0 auto !important',
+    //   textAlign: 'center',
+    // },
     // justifySelf: 'center',
     
   },
   themed:{
-    width: '100%',
+    // width: '100%',
     gridArea: 'themed',
   },
 
   event: {
     // width: '100%',
-    width: '100%',
+    // width: '100%',
+    justifySelf: 'center',
     gridArea: 'event',
     // justifySelf: 'end',
     
