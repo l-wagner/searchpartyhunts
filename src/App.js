@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { LocalizeProvider } from "react-localize-redux";
 
@@ -10,8 +11,15 @@ function AppRouter() {
     <LocalizeProvider>
       <Router>
         <React.Fragment>
-          <Route path="/" exact component={Index} />
+          <Helmet>
+            <title>SearchPartyHunts</title>
+            <meta
+              name="description"
+              content="We’re two Gemini book publishing professionals with a knack for puzzles and puns who want to customize your next scavenger hunt experience."
+            />
+          </Helmet>
 
+          <Route path="/" exact component={Index} />
         </React.Fragment>
       </Router>
     </LocalizeProvider>
