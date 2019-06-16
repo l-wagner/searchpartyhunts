@@ -341,6 +341,12 @@ nav.header {
     @media screen and (max-width: $break-phone) {
       font-size: 1em;
     }
+
+     
+
+    @media screen and (max-width: $break-desktop) {
+      font-size: .7em;
+    }
   }
 
   // .navbar-toggler-icon{

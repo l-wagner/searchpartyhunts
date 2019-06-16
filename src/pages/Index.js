@@ -174,7 +174,7 @@ class Index extends Component {
               </VerticalTimeline>
             </div>
           </section>
-          <section className="testimonials-gallery-section">
+          <section id = "testimonials-gallery-section" className="testimonials-gallery-section">
             <div className="testimonials-gallery-section">
               <Gallery />
               <Testimonials />

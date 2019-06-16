@@ -11,7 +11,7 @@ export default class NavigationItems extends Component {
                               this.props.isMobile ? "is-mobile" : ""
                         }`}
                   >
-                        <ScrollIntoView selector="#how-it-works-section">
+                        <ScrollIntoView selector="#howitworks-section">
                               <div>
                                     <Translate id="header.navbar.how" />
                               </div>
