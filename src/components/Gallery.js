@@ -11,7 +11,7 @@ import allie2 from "./images/gallery/allie2.jpg";
 import allie3 from "./images/gallery/allie3.jpg";
 import allie4 from "./images/gallery/allie4.jpg";
 import allie5 from "./images/gallery/allie5.jpg";
-import edgar from "./images/carousel/edgar.jpg";
+import edgar from "./images/gallery/edgar.jpg";
 
 const items = [
     {

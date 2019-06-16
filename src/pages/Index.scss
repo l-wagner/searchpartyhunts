@@ -23,7 +23,8 @@ $maroon: #75313a;
 // $serif: 'Roboto Slab', serif;
 
 $sans-serif: 'Roboto';
-$accent: 'Shrikhand';
+$accent: 'Ultra';
+// $accent: 'Shrikhand';
 
 
 $light: 300;
@@ -319,7 +320,7 @@ nav.header {
   
   width: 100%;
   color: $white;
-  font-style: italic;
+  // font-style: italic;
 
 
   .header__content {
@@ -537,7 +538,7 @@ nav.header {
 
   .carousel-caption {
     font-family: $accent;
-    font-style: italic;
+    // font-style: italic;
     h3 {
       color: $yellow;
       top: 60%;
@@ -916,7 +917,7 @@ section {
       width: 100%;
       padding: 1em;
       font-family: $accent;
-      font-style: italic;
+      // font-style: italic;
     }
     .about-contact {
       background-color: $yellow;
