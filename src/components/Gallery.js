@@ -12,8 +12,22 @@ import allie3 from "./images/gallery/allie3.jpg";
 import allie4 from "./images/gallery/allie4.jpg";
 import allie5 from "./images/gallery/allie5.jpg";
 import edgar from "./images/gallery/edgar.jpg";
+import Team from "./images/gallery/Team.jpg";
+import BaileyFountain from "./images/gallery/BaileyFountain.jpeg";
+import Bookstore from "./images/gallery/Bookstore.jpeg";
+import BrainpopTeam from "./images/gallery/BrainpopTeam.jpg";
+import HuntStart from "./images/gallery/HuntStart.jpg";
+import Lockbox from "./images/gallery/Lockbox.jpeg";
+import Tokens from "./images/gallery/Tokens.jpg";
 
 const items = [
+    { src: Team },
+    { src: BaileyFountain },
+    { src: Bookstore },
+    { src: BrainpopTeam },
+    { src: HuntStart },
+    { src: Lockbox },
+    { src: Tokens},
     {
         src: allie2
     },

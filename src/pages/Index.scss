@@ -49,7 +49,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 14px;
   font-family: $sans-serif !important;
   font-weight: $normal !important;
 
@@ -261,7 +261,7 @@ textarea {
 
   .contact {
     justify-self: start;
-    margin: .8em auto;
+    margin: 0.8em auto;
     width: 80%;
 
     @media screen and (max-width: $break-phone) {
@@ -641,13 +641,13 @@ section {
       line-height: initial;
     }
     svg {
-      border: 5px solid white;
+      border: 12px solid white;
       background-color: white;
       border-radius: 50%;
       color: $maroon;
       // color: $blue;
-      font-size: 2.3em;
-      margin-bottom: 1em;
+      font-size: 4em;
+      margin-bottom: 0.5em;
     }
     div {
       // text-align: center;
@@ -661,6 +661,7 @@ section {
   /*---------Values-End--------*/
   /*---------How-it-works--------*/
   .how-it-works {
+    
     color: black;
     font-family: $accent;
     overflow-x: hidden;
@@ -680,7 +681,7 @@ section {
     }
 
     .vertical-timeline-element--last {
-      margin-top: 5em;
+      margin-top: 3em;
       .vertical-timeline-element-icon {
         background: $darkteal;
         // background: $blue;
@@ -743,6 +744,7 @@ section {
 
   /*---------Testimonials-Gallery--------*/
   .testimonials-gallery-section {
+
     padding-top: 5em;
     padding-bottom: 5em;
     display: grid;
@@ -762,12 +764,13 @@ section {
         width: 90%;
         border-radius: 5%;
         border: 0.8em solid white;
-        border-bottom: 4em solid white;
+        border-bottom: 3em solid white;
       }
       .carousel-indicators li {
         width: 0.7em;
         height: 0.7em;
         border-radius: 50%;
+
         background-color: $darkteal;
       }
 
@@ -835,7 +838,7 @@ section {
           // font-family: $serif;
           // font-style: italic;
           letter-spacing: 2px;
-          font-size: 1.1em;
+          font-size: 1.2em;
           text-align: center;
           justify-self: center;
         }
