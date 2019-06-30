@@ -81,7 +81,7 @@ export default class Popup extends Component {
               <Socials />
             </div>
             <div className="or">or</div>
-            <Form/>
+            <Form />
           </div>
         </div>
       )
