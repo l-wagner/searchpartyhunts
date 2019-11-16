@@ -8,16 +8,29 @@ import {
 } from "reactstrap";
 
 import business from "./images/carousel/business.jpg";
-import main from "./images/carousel/main.jpg";
+import main from "./images/carousel/mainlight.jpg";
+// import main from "./images/carousel/main.jpg";
 import celebrations from "./images/carousel/celebrations.jpg";
 import edgar from "./images/carousel/edgar.jpg";
 import wildcard from "./images/carousel/wildcard.jpg";
+// import logo from "./images/carousellogo.png";
+import logo from "./images/sphunts4321-tranparant-02.png";
 
 const items = [
+  // {
+  //   // src: './images/celebrations.jpg',
+  //   src: logo,
+
+  //   caption: ""
+  // },
   {
     // src: './images/celebrations.jpg',
     src: main,
 
+    caption: ""
+  },
+  {
+    src: edgar,
     caption: "CUSTOMIZED SCAVENGER HUNTS"
   },
   {
@@ -25,10 +38,7 @@ const items = [
     src: celebrations,
     caption: "CELEBRATIONS"
   },
-  {
-    src: edgar,
-    caption: "THEMES"
-  },
+  
 
   {
     // src: wildcard,
@@ -53,6 +63,27 @@ class HeroCarousel extends Component {
     this.onExited = this.onExited.bind(this);
   }
 
+  componentDidMount = () => {
+    let elements = document.getElementsByClassName(
+      "carousel-caption d-none d-md-block"
+    );
+    var domimg = document.createElement("img");
+    domimg.src = logo;
+    domimg.className = "carousel-logo";
+    let child = <img className="carousel-logo" src={logo} />;
+    for (var i = elements.length - 1; i >= 0; i--) {
+      if (elements[i] instanceof HTMLElement) {
+        // eElement.insertBefore(newFirstElement, eElement.firstChild);
+
+        elements[i].insertBefore(domimg, elements[i].firstChild);
+      }
+    }
+    console.log(elements);
+    for (let element in elements) {
+      console.log(element);
+      // element.appendChild(<img className="carousel-logo" src={logo} />);
+    }
+  };
   onExiting() {
     this.animating = true;
   }
@@ -95,7 +126,9 @@ class HeroCarousel extends Component {
           key={item.src}
         >
           <img src={`${item.src}`} alt={item.caption} />
+
           <div className="carousel-img" alt={item.caption} />
+
           <CarouselCaption captionText="" captionHeader={item.caption} />
         </CarouselItem>
       );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import ToggleIcon from "./icons/toggle-icon";
+import freelogo from "./images/free_logo_small.png";
 import NavigationItems from "./NavigationItems";
 import {
   Collapse,
@@ -35,7 +36,8 @@ export default class Header extends Component {
     return (
       <Navbar className="header" sticky="top" expand="md">
         <NavbarBrand href="/" className="logo">
-          SEARCH PARTY
+          <img class="header-logo" src={freelogo} />
+          {"  "}SEARCH PARTY
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} className="mr-2">
           <ToggleIcon open={this.state.isOpen} />
