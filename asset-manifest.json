@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/searchpartyhunts/static/css/main.6c65a9c6.chunk.css",
+    "main.js": "/searchpartyhunts/static/js/main.6811d654.chunk.js",
+    "main.js.map": "/searchpartyhunts/static/js/main.6811d654.chunk.js.map",
+    "runtime-main.js": "/searchpartyhunts/static/js/runtime-main.2be841e8.js",
+    "runtime-main.js.map": "/searchpartyhunts/static/js/runtime-main.2be841e8.js.map",
+    "static/css/2.b0361517.chunk.css": "/searchpartyhunts/static/css/2.b0361517.chunk.css",
+    "static/js/2.02889f69.chunk.js": "/searchpartyhunts/static/js/2.02889f69.chunk.js",
+    "static/js/2.02889f69.chunk.js.map": "/searchpartyhunts/static/js/2.02889f69.chunk.js.map",
+    "index.html": "/searchpartyhunts/index.html",
+    "precache-manifest.f2060effc21a385994951881918dcaf0.js": "/searchpartyhunts/precache-manifest.f2060effc21a385994951881918dcaf0.js",
+    "service-worker.js": "/searchpartyhunts/service-worker.js",
+    "static/css/2.b0361517.chunk.css.map": "/searchpartyhunts/static/css/2.b0361517.chunk.css.map",
+    "static/css/main.6c65a9c6.chunk.css.map": "/searchpartyhunts/static/css/main.6c65a9c6.chunk.css.map",
+    "static/js/2.02889f69.chunk.js.LICENSE.txt": "/searchpartyhunts/static/js/2.02889f69.chunk.js.LICENSE.txt",
+    "static/media/BaileyFountain.jpeg": "/searchpartyhunts/static/media/BaileyFountain.6f40a777.jpeg",
+    "static/media/Bookstore.jpeg": "/searchpartyhunts/static/media/Bookstore.f352d228.jpeg",
+    "static/media/BrainpopTeam.jpg": "/searchpartyhunts/static/media/BrainpopTeam.8f90925b.jpg",
+    "static/media/HuntStart.jpg": "/searchpartyhunts/static/media/HuntStart.22f51bc7.jpg",
+    "static/media/Lockbox.jpeg": "/searchpartyhunts/static/media/Lockbox.8228e246.jpeg",
+    "static/media/Team.jpg": "/searchpartyhunts/static/media/Team.e54a420c.jpg",
+    "static/media/Tokens.jpg": "/searchpartyhunts/static/media/Tokens.74290a50.jpg",
+    "static/media/allie2.jpg": "/searchpartyhunts/static/media/allie2.e50fc31f.jpg",
+    "static/media/allie3.jpg": "/searchpartyhunts/static/media/allie3.715ec11d.jpg",
+    "static/media/allie4.jpg": "/searchpartyhunts/static/media/allie4.be20b833.jpg",
+    "static/media/allie5.jpg": "/searchpartyhunts/static/media/allie5.dd30d122.jpg",
+    "static/media/business.jpg": "/searchpartyhunts/static/media/business.859231b1.jpg",
+    "static/media/celebrations.jpg": "/searchpartyhunts/static/media/celebrations.15cb42ec.jpg",
+    "static/media/edgar.jpg": "/searchpartyhunts/static/media/edgar.309929db.jpg",
+    "static/media/free_logo_small.png": "/searchpartyhunts/static/media/free_logo_small.eed04560.png",
+    "static/media/mainlight.jpg": "/searchpartyhunts/static/media/mainlight.f91ad82e.jpg",
+    "static/media/sphunts4321-tranparant-02.png": "/searchpartyhunts/static/media/sphunts4321-tranparant-02.11985bbc.png",
+    "static/media/wildcard.jpg": "/searchpartyhunts/static/media/wildcard.eb6bfeee.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2be841e8.js",
+    "static/css/2.b0361517.chunk.css",
+    "static/js/2.02889f69.chunk.js",
+    "static/css/main.6c65a9c6.chunk.css",
+    "static/js/main.6811d654.chunk.js"
+  ]
+}
